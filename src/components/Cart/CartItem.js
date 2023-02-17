@@ -17,11 +17,13 @@ function CartItem({ item }) {
         />
         <button
           className="cart-item-button"
+          onClick={()=> setCount(count + 1)}
         >
           +
         </button>
         <button
           className="cart-item-button"
+          onClick={()=> setCount(count - 1)}
         >
           -
         </button>
