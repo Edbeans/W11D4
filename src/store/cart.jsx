@@ -19,6 +19,14 @@ export const cartReducer = (state = {}, action) => {
     Object.freeze(state);
     const nextState = {...state};
     switch (action.type) {
+        // case ADD_TO_CART:
+            // if (!action.productId) {
+            //     const product = {count: 1};
+            //     product['id'] = action.productId;
+            // } else {
+            //     const product = {};
+            //     action.count + 1
+            // }
         case ADD_TO_CART: 
             const product = {count: 1};
             product['id'] = action.productId;
